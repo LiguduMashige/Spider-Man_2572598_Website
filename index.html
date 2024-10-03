@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Lightbox CSS Reference -->
+
+    <!-- Web Font Reference-->
+      <!-- Web Font - Mukta -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
 </head> 
 <body>
     <header>
@@ -15,7 +22,48 @@
         <h1>Testing: Welcome</h1>
         <p>This is the main content of the Home Page</p>
     </div>
-    
-    <script src="./app.js"></script>
+
+    <section id="history"></section>
+        <div class="container">
+            <div class="container-image">
+                <div class="js-tilt">
+                    <img src="images/spider-man-min.png" class="miles-morales" alt="Miles Morales" data-aos="zoom-in"
+                        data-aos-delay="200">
+                </div>
+            </div>
+            <div class="container-content">
+                <div class="mt-2">
+                    <h2 class="mb-2" data-aos="fade-left" data-aos-delay="200">The Story of Spider-Man</h2>
+                    <p class="mb-1" data-aos="fade-up" data-aos-delay="200">The story of Spider-Man: Miles Morales raisin one year after the events of the original Spider-Man game for PS4. Miles has progressed quite a bit, dressing in his own red-and-black version of the Spider-Man costume to patrol the streets of New York.</p>
+                    <p data-aos="fade-up" data-aos-delay="200">Starting just before Christmas, the story begins in the house from Miles in Harlem and introduces the hero Fledgling dealing with a street war between Roxxon Energy Corporation and the military criminal of The high-tech known as the Underground, led by a villain known as the Tinkerer, in the Portuguese known as Consertador. While Miles' mother, Rio Morales, holds a rally Underground destroys the party, leading the two gangs to fight against each other. confront on the Braithwaite Bridge and leaving it to Miles to step in and save those in danger.</p>
+                </div>
+            </div>
+         </div>
+    </section>
+
+     <!--===== BEYOURSELF =====-->
+     <section id="be-yourself">
+        <div class="container">
+            <div class="container-content">
+                <div class="mt-2">
+                    <h2 class="mb-2" data-aos="fade-left" data-aos-delay="200">#BehindTheMask</h2>
+                    <p class="mb-1" data-aos="fade-up" data-aos-delay="200">Anyone can wear the mask, all you have to do is believe</p>
+                    <div class="mb-2 cta-group" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#" class="cta-buy mt-2">Get Yours Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-image">
+                <div class="js-tilt">
+                    <img src="images/be-yourself.jpg" class="be-yourself" alt="BeYourself" data-aos="zoom-in"
+                        data-aos-delay="200">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===== END BEYOURSELF =====-->
+
+  
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
