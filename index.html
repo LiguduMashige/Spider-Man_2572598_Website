@@ -10,12 +10,16 @@
 
     <!-- Web Font Reference-->
       <!-- Web Font - Mukta -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet"> -->
 </head> 
 <body>
     <header>
-        <nav id="navbar"></nav>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="/svg/logo-spider.svg" alt="Spider-Man Logo" onload="SVGInject(this)"> 
+            </div>
+        </nav>
     </header>
 
     <div id="content">
@@ -24,6 +28,7 @@
     </div>
   
     <script src="./scripts/app.js"></script>
-    <!--<script src="./scripts/data.js"></script> -->
+    <script src="./scripts/svg-inject.min.js"></script>
+    <script src="./scripts/data.js"></script>
 </body>
 </html>
