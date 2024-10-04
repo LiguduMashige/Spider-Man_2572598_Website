@@ -2,8 +2,9 @@ nav {
     background-color: #1a1919;  /* Dark background for the nav bar */
     overflow: hidden;        /* Ensure proper layout for floating elements */
     padding: 10px 0;         /* Some padding for spacing */
-    text-align: center;      /* Center the nav items */
     white-space: nowrap;     /* Prevent wrapping of links to new lines */
+    display: flex;           /* Use Flexbox for positioning */
+    justify-content: flex-end; /* Align the entire nav bar content to the right */
 }
 
 nav ul {
@@ -11,7 +12,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;           /* Display list items in a row */
-    justify-content: center; /* Center the list items */
+    justify-content: flex-end; /* Align the nav items to the right */
 }
 
 nav li {
@@ -31,7 +32,7 @@ nav a {
 /* Hover effect for the links */
 nav a:hover {
     background-color: #ddd;  /* Light background on hover */
-    color: rgb(39, 37, 37);            /* Change text color on hover */
+    color: rgb(39, 37, 37);  /* Change text color on hover */
 }
 
 /* Active/current page link styling */
@@ -44,7 +45,7 @@ nav a.active {
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;  /* Stack the links vertically */
-        text-align: center;      /* Center the links */
+        text-align: right;      /* Align the links to the right */
     }
 
     nav li {
@@ -55,3 +56,18 @@ nav a.active {
         padding: 10px;          /* Adjust padding for smaller screens */
     }
 }
+
+/* body {
+    font-family: sans-serif;
+}
+.bar {
+    fill-opacity: 0.7;
+}
+.bar:hover {
+    fill-opacity: 1;
+}
+.axis-label {
+    font-size: 12px;
+} */
+
+
