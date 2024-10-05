@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/visual1.css">
+    <link rel="stylesheet" href="css/zoomtomapStyle.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
 
     <!--<script src="https://d3js.org/d3.v7.min.js"></script>-->
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+
 
     <!-- Lightbox CSS Reference -->
 
@@ -28,14 +29,15 @@
 
     <div id="content">
         <h1>Testing: Welcome</h1>
-        <h2>Spidey Crime Watch!</h2>
         <div id="chart"></div>
+        <div class="tooltip" id="tooltip"></div>
         <p>This is the main content of the Home Page</p>
     </div>
   
     <script src="./scripts/app.js"></script>
+    <script src="./scripts/zoomtomapData.js"></script>
     <!--<script src="./scripts/svg-inject.min.js"></script>-->
     <!--<script src="./scripts/data.js"></script>-->
-    <script src="./scripts/bargraphData.js"></script>
+    
 </body>
 </html>
