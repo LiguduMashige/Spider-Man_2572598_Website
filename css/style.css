@@ -1,31 +1,37 @@
 nav {
     background-color: #1a1919;  /* Dark background for the nav bar */
-    overflow: hidden;        /* Ensure proper layout for floating elements */
-    padding: 10px 0;         /* Some padding for spacing */
-    white-space: nowrap;     /* Prevent wrapping of links to new lines */
-    display: flex;           /* Use Flexbox for positioning */
-    justify-content: flex-end; /* Align the entire nav bar content to the right */
+    overflow: hidden;           /* Ensure proper layout for floating elements */
+    padding: 10px 0;            /* Some padding for spacing */
+    white-space: nowrap;        /* Prevent wrapping of links to new lines */
+    display: flex;              /* Use Flexbox for positioning */
+    justify-content: space-between;  /* Create space between the logo and nav links */
+    align-items: center;        /* Vertically center logo and nav items */
+}
+
+.logo img {
+    max-height: 50px;           /* Adjust size of the logo to fit in the nav */
+    margin-left: 20px;          /* Add some space to the left of the logo */
 }
 
 nav ul {
-    list-style: none;        /* Remove default list styles */
+    list-style: none;           /* Remove default list styles */
     margin: 0;
     padding: 0;
-    display: flex;           /* Display list items in a row */
-    justify-content: flex-end; /* Align the nav items to the right */
+    display: flex;              /* Display list items in a row */
+    justify-content: flex-end;  /* Align the nav items to the right */
 }
 
 nav li {
-    margin: 0 10px;          /* Add space between each list item */
+    margin: 0 10px;             /* Add space between each list item */
 }
 
 nav a {
-    display: inline-block;   /* Makes the links behave like buttons */
-    color: rgb(225, 213, 213);            /* White text color */
-    text-align: center;      /* Center text within the links */
-    padding: 14px 20px;      /* Padding around each link */
-    text-decoration: none;   /* Remove underlines */
-    font-size: 18px;         /* Adjust font size */
+    display: inline-block;      /* Makes the links behave like buttons */
+    color: rgb(225, 213, 213);  /* White text color */
+    text-align: center;         /* Center text within the links */
+    padding: 14px 20px;         /* Padding around each link */
+    text-decoration: none;      /* Remove underlines */
+    font-size: 18px;            /* Adjust font size */
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
@@ -43,9 +49,14 @@ nav a.active {
 
 /* Styling for smaller screens (responsive) */
 @media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
     nav ul {
         flex-direction: column;  /* Stack the links vertically */
-        text-align: right;      /* Align the links to the right */
+        text-align: right;       /* Align the links to the right */
     }
 
     nav li {
@@ -54,6 +65,10 @@ nav a.active {
 
     nav a {
         padding: 10px;          /* Adjust padding for smaller screens */
+    }
+
+    .logo {
+        margin-bottom: 10px;    /* Add space between logo and nav on small screens */
     }
 }
 
