@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'About', link: `${base}pages/about.html` },
         { name: 'Services', link: `${base}pages/services.html` },
         { name: 'Contact', link: `${base}pages/contact.html` },
-        { name: 'Design', link: `${base}pages/design.html` }
+        { name: 'Design', link: `${base}pages/design.html` },
+        { name: 'Visuals', link: `${base}pages/visuals.html`}
     ];
 
     // Create a <ul> element for the navbar
