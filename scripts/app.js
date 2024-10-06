@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pages = [
         { name: 'Home', link: `${base}index.html` },
         { name: 'About', link: `${base}pages/about.html` },
-        { name: 'Services', link: `${base}pages/services.html` },
+        { name: 'Essays', link: `${base}pages/essays.html` },
         { name: 'Contact', link: `${base}pages/contact.html` },
         { name: 'Design', link: `${base}pages/design.html` },
         { name: 'Visuals', link: `${base}pages/visuals.html`}
