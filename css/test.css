@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#map {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    border: 1px solid black;
+}

@@ -36,7 +36,7 @@ function processData(data) {
   }
 } */
 
-  const apiUrl = 'https://data.cityofnewyork.us/api/views/uip8-fykc/rows.json';
+const apiUrl = 'https://data.cityofnewyork.us/api/views/uip8-fykc/rows.json';
 
         // Fetch data from the API
         fetch(apiUrl)
