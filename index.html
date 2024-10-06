@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    
 
     <!--<link rel="stylesheet" href="css/test2.css">-->
 
@@ -16,20 +18,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet"> -->
 </head> 
 <body>
-    <header>
-        <nav id="navbar">
-            <div class="logo">
-                <img src="images/Spiderman-Logo-No-Background.png" alt="Spider-Man Logo"> 
+ 
+    <!--<div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">Hi</span><span class="logo">Spidey</span>
+        </h1> 
+        </div>
+    </div>-->
+        <div id="header">
+            <nav id="navbar">
+                <div class="logo">
+                    <img src="images/Spiderman-Logo-No-Background.png" alt="Spider-Man Logo"> 
+                </div>
+            </nav>
+            <div class="header-text">
+                <P>Welcome Spidey!</P>
+                <h1>scroll down to save the day!</h1>
             </div>
-        </nav>
-    </header>
-
-    <div id="content">
-        <h1>NYC CRIME MAP</h1>
-        <p>This is the main content of the Home Page</p>
+        </div>
+        <!-- About Spidey-->
+    <div id="spidey-profile">
+        <div class="container">
+            <div class="row">
+                <div class="spidey-profile-col-1">
+                    <img src="images/miles-profile.png" alt="Spider-Man">
+                </div>
+                <div class="spidey-profile-col-2">
+                    <h1 class="sub-title">About Spidey!</h1>
+                    <p>Hey! It's me, your friendly neighbourhood spider-man. You're probably
+                        wondering why are there two spider-men in one world, right? That is 
+                        very simple my friend. you are in the multiverse right now! In the multiverse, there
+                        are multiple spider-men and women occupying the very same splace. Look, I know that this
+                        all sounds very confusing to you right now but I promise, take my hand and I will be able to 
+                        explan everything to you right now! But first, you need to know about me!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"> onclick="opentab('skills')" Powers</p>
+                        <p class="tab-links">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab">
+                        <ul>
+                            <li><span>Fighting</span><br>Enhanced Combat</li>
+                            <li><span>Spying</span><br>Web-Swinging</li>
+                            <li><span>Web Throw</span><br>Perfect Dodge</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"></div>
+                        <ul>
+                            <li><span>Super Strength</span><br>Enhanced Stamina</li>
+                            <li><span>Sixth Sense</span><br>Reflexes</li>
+                            <li><span>Intellect</span><br>Accelerated Healing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"></div>
+                        <ul>
+                            <li><span>Avengers</span><br>Fantastic Four</li>
+                            <li><span>Illuminati</span><br>Spider-Society</li>
+                            <li><span>Marvels Defenders</span><br>X-Men</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
     </div>
-  
+</div>
+</div>
+
+    
     <script src="scripts/app.js"></script>
+    
+   
 
     <!--<script src="./scripts/svg-inject.min.js"></script>-->
     <!--<script src="./scripts/data.js"></script>-->

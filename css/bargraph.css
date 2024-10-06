@@ -6,9 +6,6 @@ body {
     font: 10px sans-serif;
     text-anchor: middle;
 }
-body {
-    font-family: Arial, sans-serif;
-  }
 
   /* Centering the chart div with Flexbox */
   #chart-container {
