@@ -4,33 +4,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 600px;
-    overflow: hidden;
+    height: 95vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow to keep images within banner */
 }
 
+/* Background images */
 .background-image {
     position: absolute;
-    top: 5%; /* Adjusts top margin; change as needed */
-    height: 90%; /* To leave space at the top and bottom */
-    /* opacity: 0.3; */ /* Lower opacity to blend with the background */
-    z-index: 0; /* Ensures images stay behind the text */
+    top: 0;
+    height: 100%; /* Full height of the hero banner */
+    object-fit: cover; /* Ensure the image covers its container */
+    z-index: 0;
+    opacity: 0.8; /* Slight transparency for better readability of text */
 }
 
+/* Specific positioning for left and right images */
 .background-image.left {
-    left: 5%; /* Positions the left image */
-    background: url('/images/sneijder.png') no-repeat center center;
-    background-size: contain;
-    width: 20%; /* Adjust width as needed */
+    left: -5%; /* Shift slightly offscreen for effect */
+    width: 50%; /* Cover half the width of the hero banner */
 }
 
 .background-image.right {
-    right: 5%; /* Positions the right image */
-    background: url('/images/Lautaro-Martinez-Background-PNG-Image.png') no-repeat center center;
-    background-size: contain;
-    width: 20%; /* Adjust width as needed */
+    right: -5%; /* Shift slightly offscreen for effect */
+    width: 52%; /* Cover half the width of the hero banner */
 }
 
+/* Text styling in the hero banner */
 #hero-subheading, #hero-title {
-    position: relative; /* Ensures text stays above background images */
-    z-index: 1; /* Higher than the background images */
+    position: relative;
+    z-index: 1; /* Ensure text is above the images */
+    color: rgb(15, 14, 14);
+    text-align: center; /* Center-align text */
+}
+
+#hero-title h1 {
+    font-size: 3rem;
+}
+
+#hero-subheading p {
+    font-size: 1.5rem;
+}
+
+/* Animation effect */
+#text-scroll {
+    animation: fadeInOut 2500ms ease infinite;
 }
