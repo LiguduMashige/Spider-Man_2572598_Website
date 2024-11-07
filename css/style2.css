@@ -1,0 +1,191 @@
+:root {
+    --light-grey: rgb(243, 243, 243);
+    --border-width: 3px;
+    --blue-gradient: linear-gradient(
+        to right,
+        rgb(26, 26, 237),
+        rgb(113, 188, 254),
+        rgb(24, 146, 247),
+        rgb(26, 26, 237)
+    );
+    --black-gradient: linear-gradient(
+        90deg,
+        transparent,
+        black 7.5%,
+        transparent
+    );
+
+    --fs-title-med: 4rem;
+    --fs-subheading-med: 1.25rem;
+    --fs-normal-med: 0.85rem;
+
+    --fs-title-small: 3rem;
+    --fs-subheading-small: 1rem;
+    --fs-normal-small: 0.75rem;
+
+    --padding-med: 0.7rem;
+    --padding-small: 0.5rem;
+}
+
+html {
+    font-family: 'Satoshi', sans-serif;
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-bottom: var(--light-grey) solid var(--border-width);
+}
+
+@media (max-width: 450px) {
+    header {
+        padding: 0 1rem;
+    }
+}
+
+main {
+    padding: 0 1.5rem; 
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 0 var(--padding-med);
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        padding: 0 var(--padding-small);
+    }
+}
+
+h1 {
+    color: black;
+    margin: 0;
+    font-size: 5rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.coolFont {
+    animation: background-pan 20s linear infinite forwards;
+    background: linear-gradient(
+        to right,
+        rgb(26, 26, 237),
+        rgb(113, 188, 254),
+        rgb(24, 146, 247),
+        rgb(26, 26, 237)
+    ) 300% text;
+    background-size: 300%;
+    background-clip: text;
+    color: transparent;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+    text-decoration: white;
+}
+
+nav {
+    overflow: hidden;
+    padding: 10px 3%;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    max-height: 60px;
+    margin-left: auto; /* Push logo to the far right */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align the nav items to the right */
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    display: inline-block;
+    color: black; /* Change text color to black */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none; /* Remove underlines */
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the links */
+nav a:hover {
+    color: rgb(26, 26, 237); /* Change text color to blue on hover */
+    transform: scale(1.1);
+}
+
+nav a::after{
+    content: '';                      /* Create a pseudo-element */
+    display: block;                  /* Make it a block element */
+    width: 0;                        /* Start with a width of 0 */
+    height: 2px;                     /* Height of the underline */
+    background: #496a82;            /* Color of the underline */
+    transition: width 0.3s ease;    /* Smooth width transition */
+    position: absolute;              /* Position it absolutely */
+    left: 50%;                       /* Center it horizontally */
+    bottom: 0;                       /* Position it at the bottom */
+    transform: translateX(-50%);    /* Center it */
+    text-decoration-color: rgb(52, 152, 210);
+}
+
+/* Active/current page link styling */
+nav a.active {
+    color: rgb(30, 122, 167); /* Keep active link text color black */
+}
+
+/* Styling for smaller screens (responsive) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+        position: sticky;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the links vertically */
+        text-align: right; /* Align the links to the right */
+        justify-content: flex-end;
+        display: flex;
+    }
+
+    nav li {
+        margin: 10px 0; /* Adjust margin for vertical alignment */
+    }
+
+    nav a {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Add space between logo and nav on small screens */
+    }
+}

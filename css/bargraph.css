@@ -13,6 +13,7 @@ body {
     justify-content: center; /* Horizontal centering */
     align-items: center; /* Vertical centering if needed */
     height: 100vh; /* Full viewport height for vertical centering */
+    
   }
 
   #chart {

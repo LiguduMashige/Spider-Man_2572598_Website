@@ -1,0 +1,36 @@
+#hero-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 5%; /* Adjusts top margin; change as needed */
+    height: 90%; /* To leave space at the top and bottom */
+    /* opacity: 0.3; */ /* Lower opacity to blend with the background */
+    z-index: 0; /* Ensures images stay behind the text */
+}
+
+.background-image.left {
+    left: 5%; /* Positions the left image */
+    background: url('/images/sneijder.png') no-repeat center center;
+    background-size: contain;
+    width: 20%; /* Adjust width as needed */
+}
+
+.background-image.right {
+    right: 5%; /* Positions the right image */
+    background: url('/images/Lautaro-Martinez-Background-PNG-Image.png') no-repeat center center;
+    background-size: contain;
+    width: 20%; /* Adjust width as needed */
+}
+
+#hero-subheading, #hero-title {
+    position: relative; /* Ensures text stays above background images */
+    z-index: 1; /* Higher than the background images */
+}
